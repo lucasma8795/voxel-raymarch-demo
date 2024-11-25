@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# Output executable
+voxel-raymarch-demo
+
+# Workspace configuration files
+.vscode
+
+# MacOS metadata files
+.DS_Store
