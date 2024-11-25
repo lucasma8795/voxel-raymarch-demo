@@ -27,7 +27,7 @@ CPPFILES = $(shell find ./src -name "*.cpp")
 OBJECTS = $(CPPFILES:.cpp=.o)
 
 # libraries
-LIBS = -L/opt/homebrew/lib/
+LIBS = -L/opt/homebrew/lib/ -lGLEW -lglfw -framework OpenGL
 
 # include path
 INCLUDE = -I$(CURDIR)/src -isystem /opt/homebrew/include/

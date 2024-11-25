@@ -1,3 +1,7 @@
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+
+
 namespace VoxelRaymarchDemo
 {
 
@@ -14,6 +18,13 @@ public:
 
 private:
     static Application* s_Instance;
+
+    GLFWwindow* m_WindowHandle;
+
+    // Window specifications
+    static const int s_WindowWidth;
+    static const int s_WindowHeight;
+    static const std::string s_WindowTitle;
 };
 
 
