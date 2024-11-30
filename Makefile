@@ -10,8 +10,10 @@ CXX = /opt/homebrew/bin/g++-14
 CXXFLAGS = -O3 -Wall -Wextra -Wpedantic # -Wfatal-errors
 CXXFLAGS += -march=native -std=c++23 # -fsanitize=undefined
 CXXFLAGS += -flto=auto # -pthread -fopenmp
-CXXFLAGS += -DNDEBUG -fno-exceptions
+CXXFLAGS += -fno-exceptions # -DNDEBUG
 # CXXFLAGS += -Wno-unused-variable -Wno-unused-parameter
+
+CXXFLAGS += -DGL_SILENCE_DEPRECATION
 
 # linker flags
 LDFLAGS = -flto=auto # -pthread

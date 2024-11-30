@@ -1,4 +1,4 @@
-#include "Application.h"
+#include "Core/Application.h"
 
 
 int main()
@@ -6,5 +6,5 @@ int main()
     using VoxelRaymarchDemo::Application;
     
     Application app = Application();
-    app.Run();
+    app.run();
 }

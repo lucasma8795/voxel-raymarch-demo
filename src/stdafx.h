@@ -1,3 +1,5 @@
+#pragma once
+
 // C++ includes used for precompiling -*- C++ -*-
 
 // Copyright (C) 2003-2022 Free Software Foundation, Inc.
@@ -160,3 +162,14 @@
 #endif
 #include <stdatomic.h>
 #endif
+
+#include "Core/Base.h"
+
+#define GLM_ENABLE_EXPERIMENTAL
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtx/quaternion.hpp>
+#include <glm/gtx/string_cast.hpp>
+
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
